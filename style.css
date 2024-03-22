@@ -1,59 +1,133 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Shippori Mincho", serif;
+  font-size: 16px;
+}
+.titulo-principal {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
 body {
+  padding: 50px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.display {
+  display: flex;
+  padding: 10px;
+}
+.imagen-principal {
+  width: 250px;
+  height: 350px;
+  border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
+  border: 4px solid rgba(202, 179, 105, 0.562);
+}
+.fragmento {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.fragmento a {
+  width: 50%;
+  text-align: center;
+  font-style: oblique;
+  font-size: medium;
+  margin: auto;
+  text-decoration: none;
+}
+.display1 {
+  display: flex;
+  gap: 50px;
+  background-color: rgba(202, 179, 105, 0.562);
+  margin-left: 20px;
+  border-radius: 17px;
+  font-size: 20px;
+}
+.display2 {
+  display: flex;
+  justify-items: left;
+  align-items: center;
+  background-color: rgba(202, 179, 105, 0.562);
+}
+.preparacion {
+  padding: 15px;
+}
+.display3 {
+  display: flex;
+  background-color: rgba(202, 179, 105, 0.562);
+  border-radius: 17px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.iconos-redes {
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+}
+.bordes {
+  border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
+}
+th,
+td {
+  width: 20%;
+  text-align: center;
+  border: 1px solid #000;
+}
+.contenedor {
+  display: flex;
+  align-items: center;
+  /* gap: 20px; */
+  text-align: center;
+  padding: 10px;
+}
+.tabla {
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: serif;
+}
+/* MEDIA QUERIES */
+/* Teléfonos */
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 18px;
+  }
+  .contenedor {
+    display: block;
+  }
+  .imagen-principal {
+    width: 120px;
+    height: 120px;
+  }
+  .display {
+    display: block;
+    padding: 0px;
     margin: 0px;
-    font-size: 16px;
-    line-height: 1.5;
-    }
-       ol {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    ul {
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-    .display {
-        display: flex;
-        }
-    .display1 {
-        display: flex;
-        gap: 50px; 
-        background-color: rgba(202, 179, 105, 0.562);
-        }
-    .display2 {
-        display: flex;
-        justify-items: left;
-        align-items: center;
-        background-color: rgba(202, 179, 105, 0.562);
-        }
-    .display3 {
-        display: flex;
-        gap: 15px; 
-        background-color:  rgba(202, 179, 105, 0.562);
-        border-radius: 17px; 
-        padding-left: 9px; 
-        padding-top: 9px; 
-        padding-bottom: 3px; 
-   
-        }
-    .bordes {
-        border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
-        }
-    th, td {
-    width: 20%;
-    text-align: center;
-    border: 1px solid #000;
-        }
-    .contenedor {
-        display: flex; 
-        align-items: center;
-        gap: 20px;
-        }
-    .tabla {
-        border-collapse: collapse;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        }
-    
-    h3 {
-        font-family: serif ;
-       }
-       
-       
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* Tabletas */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 22px;
+  }
+}
+/* Computadores */
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 26px;
+  }
+}
