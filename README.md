@@ -1,3 +1,3 @@
 # mihistoria
 
-# #Este en mi primer proyecto plano html relacionado con mi historia
+## Este en mi primer proyecto plano en html y css, sobre mi historia
