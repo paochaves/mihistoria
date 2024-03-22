@@ -55,9 +55,8 @@ p {
 .display1 {
   display: flex;
   justify-content: center;
-  gap: 50px;
-  margin-left: 15px;
-  font-size: 20px;
+  gap: 40px;
+  margin-left: 20px;
 }
 .titulo-postre {
   text-align: center;
@@ -131,6 +130,7 @@ h4 {
   }
   .contenedor {
     display: block;
+    justify-content: center;
   }
   .imagen-principal {
     margin-top: 10px;
@@ -146,8 +146,8 @@ h4 {
     align-items: center;
   }
   .display1 {
-    margin-left: 10px;
-    gap: 30px;
+    margin-left: 20px;
+    gap: 20px;
   }
 }
 /* Tabletas */
