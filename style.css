@@ -55,7 +55,7 @@ p {
 .display1 {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 50px;
   margin-left: 15px;
   font-size: 20px;
 }
@@ -133,6 +133,7 @@ h4 {
     display: block;
   }
   .imagen-principal {
+    margin-top: 10px;
     width: 120px;
     height: 120px;
     justify-content: center;
